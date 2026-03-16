@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wilapp
+  labels:
+    app: wilapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wilapp
+  template:
+    metadata:
+      labels:
+        app: wilapp
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+      - name: dev
+        image: wil42/playground:v1
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 8888
