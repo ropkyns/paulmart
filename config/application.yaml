@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/ropkyns/paulmart.git
     targetRevision: HEAD
-    path: /config
+    path: config
   destination: 
     server: https://kubernetes.default.svc
     namespace: willapp
