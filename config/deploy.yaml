@@ -17,6 +17,6 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
       - name: wilapp
-        image: wil42/playground:v4
+        image: wil42/playground:v1
         ports:
         - containerPort: 8888
